@@ -146,6 +146,11 @@ hr{
   font-size:20px;
   border: none;
   text-transform: uppercase;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color:rgb(250, 209, 209);
+  transition: all 0.2s 0.1s ease-in-out;
 }
 
 .btn-edit{
@@ -175,9 +180,12 @@ hr{
 }
 
 input{
-  height:30px;
+  height:40px;
   width:350px;
   padding-left: 8px;
+  font-size:25px;
+  letter-spacing:2px
+  
 }
 
 
