@@ -1,7 +1,7 @@
 import { Seed } from './seed.js';
 export const store = {
   state: Seed,
-  titleActive:'',
+
  
   storeActiveCol(idCol) {
     this.state.map((s) => {
@@ -15,9 +15,9 @@ export const store = {
   },
 
   activeColTitle(){
-    return this.state.find(s => s.active === true);
-    // const t= this.state.find(s => s.active === true);
-    // this.titleActive=t
+    const obj= this.state.find(s => s.active === true);
+    return obj.name
+    
     
   }
 

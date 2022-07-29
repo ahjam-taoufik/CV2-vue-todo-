@@ -1,7 +1,7 @@
 <template>
     <div class="add-todo">
-        <h1>New Todo</h1>
-        <h1>name :{{getTitle}} </h1>
+      
+        <h1>New {{getTitle}} </h1>
         <input type="text" placeholder="Add Todo" />
         <button type="button" class="btn btn-add">Add</button>
     </div>
@@ -14,9 +14,10 @@ export default {
   
      computed:{
             getTitle(){
-                return  store.activeColTitle().name
-                // console.log(name);
-                // return name;
+                const name= store.activeColTitle()
+                console.log(name);
+                return name;
+            
             }
         }
   
