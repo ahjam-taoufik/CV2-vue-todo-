@@ -2,7 +2,7 @@
 <template>
       <div class="col " :class="{'active':col.active}" >
             <h1 @click="activeCol(col.id)">{{col.name}} </h1>
-               <Col-item  v-for="task in col.tasks" :key="task.id"  :colItem="task"   />
+               <Col-item  v-for="task in col.tasks" :key="task.id"  :colItem="task"  :col="col" />
         </div>
 </template>
 
