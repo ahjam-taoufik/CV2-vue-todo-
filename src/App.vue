@@ -7,58 +7,17 @@
       <button type="button" class="btn btn-add">Add</button>
     </div>
     <hr>
-    <div class="cols">
-
-      <div class="col">
-         <h1>Todo </h1>
-        <div class="col-item">
-          <h1>Learn Vuejs</h1>
-          <div class="buttons">
-            <button type="button" class="btn btn-edit">Edit</button>
-            <button type="button" class="btn btn-delete">Delete</button>
-          </div>
-        </div>
-        <div class="col-item">
-          <h1>Learn2 Vuejs</h1>
-          <div class="buttons">
-            <button type="button" class="btn btn-edit">Edit</button>
-            <button type="button" class="btn btn-delete">Delete</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-         <h1>In progress </h1>
-        <div class="col-item">
-          <h1>Learn React</h1>
-          <div class="buttons">
-            <button type="button" class="btn btn-edit">Edit</button>
-            <button type="button" class="btn btn-delete">Delete</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-         <h1>Done</h1>
-        <div class="col-item">
-          <h1>Learn Css</h1>
-          <div class="buttons">
-            <button type="button" class="btn btn-edit">Edit</button>
-            <button type="button" class="btn btn-delete">Delete</button>
-          </div>
-        </div>
-      </div>
-
-    </div>
+      <Cols/>
 
   </div>
 </template>
 
 <script>
+import Cols from './components/Cols.vue'
 export default {
   name: 'App',
   components: {
-
+    Cols
   }
 }
 </script>
