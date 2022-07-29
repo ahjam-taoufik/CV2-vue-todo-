@@ -11,13 +11,16 @@
 import Col from './Col.vue'
 import { store } from '../store.js'
 export default {
+
     components: {
         Col
     },
     data() {
         return {
-            state: store.state
+            state: store.state,
+           
         }
-    }
+    },
+   
 }
 </script>
