@@ -1,8 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
       <div class="col">
-            <h1>{{title}} </h1>
-             <Col-item />
+            <h1>{{col.name}} </h1>
+               <Col-item  v-for="task in col.tasks" :key="task.id"  :colItem="task" />
         </div>
 </template>
 
@@ -12,9 +12,16 @@ import ColItem from './Col-item'
         components:{
             ColItem
         },
-        props:['title'],
+        props:['col'],
        
 
     }
 </script>
+
+<style scoped>
+h1{ 
+    color: brown;
+}
+
+</style>
 

@@ -1,9 +1,10 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
     <div class="cols">
-        <Col title="Todo" />
+        <!-- <Col title="Todo" />
         <Col title="In Progress" />
-        <Col title="Done" />
+        <Col title="Done" /> -->
+        <Col v-for="col in state" :key="col.id"  :col="col" />
     </div>
 </template>
 <script>

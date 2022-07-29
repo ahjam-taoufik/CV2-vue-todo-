@@ -1,6 +1,6 @@
 <template>
     <div class="col-item">
-        <h1>vuejs </h1>
+        <h1>{{colItem.title}}</h1>
         <div class="buttons">
             <button type="button" class="btn btn-edit">Edit</button>
             <button type="button" class="btn btn-delete">Delete</button>
@@ -10,14 +10,15 @@
 
 <script>
 export default {
-  
+   props:['colItem']
 }
 </script>
 
 <style scoped>
  h1{
     text-align: center;
-    text-transform: uppercase;
+    font-size:25px;
+    /* text-transform: uppercase; */
     
  }
 </style>
