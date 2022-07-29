@@ -16,9 +16,18 @@ export const store = {
 
   activeColTitle(){
     const obj= this.state.find(s => s.active === true);
-    return obj.name
-    
-    
+    return obj
+  },
+  addTask(titleTask){
+      const t=this.activeColTitle().tasks
+       t.push(
+        {
+            id:t.length+1,
+            title:titleTask,
+            edit:false
+        }
+        )
+
   }
 
 
